@@ -22,10 +22,5 @@ public class NewClass {
              System.out.println("Invalid Password!");
          
          }
-    
     }
-    
-    
-
-
 }
