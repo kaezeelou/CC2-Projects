@@ -1,7 +1,7 @@
-package finalactivity;
+package final;
 import java.io.*;
 
-public class FinalActivity {
+public class Final {
 
     public static void main(String[] args) throws IOException {
            display();
