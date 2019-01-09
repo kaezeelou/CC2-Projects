@@ -1,0 +1,41 @@
+package oop;
+import java.util.Scanner;
+
+public class OOP {
+
+   
+    public static void main(String[] args) {
+        Scanner sc = new Scanner (System.in);
+       try{
+        System.out.print("How many numbers to input? :");
+        int input = sc.nextInt();   
+        float f[] = new float[input];
+
+        for (int i =0; i<f.length; i++){
+            try{
+            
+            System.out.print("Enter number: ");
+            f[i]= sc.nextFloat();
+        }catch(Exception e){
+                System.out.println("Error");
+                sc = new Scanner (System.in);
+                i = i-1;
+                
+                
+        }
+        }
+        System.out.println("Average: " + getMean(f));
+        
+    }catch (Exception e){
+        System.out.println("Try again!");
+        main(args);
+    }
+    }
+    static float getMean(float[]f){
+        float sum = 0;
+        for (int i = 0; i < f.length; i++){
+        sum += f[i];
+    }
+        return (sum/f.length);
+    }
+}
